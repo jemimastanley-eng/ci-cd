@@ -14,7 +14,7 @@ describe('App component', ()=> {
     const { getAllByText} = render(<App />)
     await waitFor(() => {
       const welcomeElements = getAllByText(/Welcome to/i)
-      expect(welcomeElements.length).toBe(2)
+      expect(welcomeElements.length).toBe(3)
       expect(welcomeElements[0]).toBeInTheDocument()
       expect(welcomeElements[1]).toBeInTheDocument()
     })
